@@ -1,0 +1,55 @@
+{
+  "name": "london-transport-mcp",
+  "version": "1.0.1",
+  "description": "A Transport for London (TfL) MCP server providing real-time status and journey planning tools",
+  "main": "mcpServer.js",
+  "type": "module",
+  "bin": {
+    "london-transport-mcp": "./mcpServer.js"
+  },
+  "files": [
+    "mcpServer.js",
+    "lib/",
+    "tools/",
+    "commands/",
+    "index.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node mcpServer.js",
+    "list-tools": "node index.js tools",
+    "postman": "node commands/open-postman.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "transport-for-london",
+    "tfl",
+    "london-transport",
+    "journey-planner",
+    "tube-status",
+    "api",
+    "claude",
+    "copilot"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "open": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "anoopt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anoopt/london-tfl-journey-status-mcp-server.git"
+  },
+  "homepage": "https://github.com/anoopt/london-tfl-journey-status-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/anoopt/london-tfl-journey-status-mcp-server/issues"
+  }
+}
